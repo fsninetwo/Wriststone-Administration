@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="Wriststone_Administration.Views.Windows.WindowView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Wriststone_Administration.Views.Windows"
+             xmlns:tabviews="clr-namespace:Wriststone_Administration.Views.Windows.TabViews"
+             mc:Ignorable="d" 
+             d:DesignHeight="440" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="Main">
+                <MenuItem x:Name="Login" Header="Log Out" Click="Login_Click"/>
+                <MenuItem x:Name="Exit" Header="Exit" Click="Exit_Click"/>
+            </MenuItem>
+            <MenuItem x:Name ="LogMenu" Header="Logs">
+                <MenuItem x:Name="Logs" Header="Logs" Click="Logs_Click"/>
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Search:" Grid.Column="0"/>
+            <TextBox x:Name="Search" Margin="5" Grid.Column="1" TextChanged="Search_TextChanged"/>
+        </Grid>
+        <TabControl Grid.Row="2" SelectionChanged="TabControl_SelectionChanged">
+            <TabItem x:Name="AccountTab" Header="Accounts">
+                <tabviews:AccountView x:Name="AccountView"/>
+            </TabItem>
+            <TabItem x:Name="ForumCategoryTab" Header="Forum Categories">
+                <tabviews:ForumCategoryView x:Name="ForumCategoryView"/>
+            </TabItem>
+            <TabItem x:Name="OrderTab" Header="Orders">
+                <tabviews:OrderView x:Name="OrderView"/>
+            </TabItem>
+            <TabItem x:Name="OrderDetailsTab" Header="Order Details">
+                <tabviews:OrderDetailsView x:Name="OrderDetailsView"/>
+            </TabItem>
+            <TabItem x:Name="PostTab" Header="Posts">
+                <tabviews:PostView x:Name="PostView"/>
+            </TabItem>
+            <TabItem x:Name="ProductTab" Header="Products">
+                <tabviews:ProductView x:Name="ProductView"/>
+            </TabItem>
+            <TabItem x:Name="ProductCategoryTab" Header="Product Categories">
+                <tabviews:ProductCategoryView x:Name="ProductCategoryView"/>
+            </TabItem>
+            <TabItem x:Name="RatingTab" Header="Ratings">
+                <tabviews:RatingView x:Name="RatingView"/>
+            </TabItem>
+            <TabItem x:Name="ThreadTab" Header="Threads">
+                <tabviews:ThreadView x:Name="ThreadView"/>
+            </TabItem>
+            <TabItem x:Name="LogTab" Header="Logs">
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>

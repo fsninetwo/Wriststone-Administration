@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="Wriststone_Administration.Views.Windows.TabViews.PostView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Wriststone_Administration.Views.Windows.TabViews"
+             xmlns:edit="clr-namespace:Wriststone_Administration.Views.Windows.TabViews.Edit"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition x:Name="EditHeight" Height="0"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="Search" Visibility="Hidden" TextChanged="Search_TextChanged" />
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition x:Name="ReportWidth" Width="0"/>
+            </Grid.ColumnDefinitions>
+            <DataGrid Grid.Column="0" x:Name="PostTable" ItemsSource="{Binding}" AutoGenerateColumns="False" IsReadOnly="True" SelectionUnit="FullRow" VerticalGridLinesBrush="LightGray" HorizontalGridLinesBrush="LightGray">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Path=Id}" Header="Id" Width="0.5*"/>
+                    <DataGridTextColumn Binding="{Binding Path=Context}" Header="Context" Width="0.7*"/>
+                    <DataGridTextColumn Binding="{Binding Path=Created}" Header="Created" Width="0.7*"/>
+                    <DataGridTextColumn Binding="{Binding Path=Thread}" Header="Thread" Width="0.7*"/>
+                    <DataGridTextColumn Binding="{Binding Path=Account}" Header="Account" Width="1*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        <edit:PostEditView Grid.Row="1" x:Name="PostEditView" Visibility="Hidden" IsEnabled="False" IsEnabledChanged="AccountEditView_IsEnabledChanged"/>
+        <Grid Grid.Row="2" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="Insert" Content="Add" Margin="2" Grid.Column="0" Click="Insert_Click"/>
+            <Button x:Name="Update" Content="Update" Margin="2" Grid.Column="1" Click="Update_Click"/>
+            <Button x:Name="Remove" Content="Remove" Margin="2" Grid.Column="2" Click="Remove_Click"/>
+        </Grid>
+    </Grid>
+</UserControl>

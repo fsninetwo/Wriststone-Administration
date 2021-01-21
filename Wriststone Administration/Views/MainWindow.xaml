@@ -1,0 +1,17 @@
+﻿<Window x:Class="Wriststone_Administration.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wriststone_Administration.Views"
+        xmlns:login="clr-namespace:Wriststone_Administration.Views.Login"
+        xmlns:window="clr-namespace:Wriststone_Administration.Views.Windows"
+        mc:Ignorable="d"
+        Title="Wriststone Administration" MinWidth="800" MinHeight="480" >
+    <Grid>
+        <login:LoginView x:Name="LoginView" IsEnabledChanged="LoginView_IsEnabledChanged"  />
+        <login:SignUpView x:Name="SignUpView" IsEnabled="false" Visibility="Collapsed" IsEnabledChanged="SignUpView_IsEnabledChanged" />
+        <login:PasswordRecoveryView x:Name="RecoveryView" IsEnabled="false" Visibility="Collapsed" IsEnabledChanged="RecoveryView_IsEnabledChanged"/>
+        <window:WindowView x:Name="WindowView" IsEnabled="false" Visibility="Collapsed" IsEnabledChanged="WindowView_IsEnabledChanged"/>
+    </Grid>
+</Window>

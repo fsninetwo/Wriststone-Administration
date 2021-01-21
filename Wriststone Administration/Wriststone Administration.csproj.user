@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\Windows\TabViews\AccountView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\TabViews\Edit\AccountEditView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\TabViews\Edit\ForumCategoryEditView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\TabViews\Edit\OrderDetailsEditView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\TabViews\Edit\OrderEditView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\TabViews\Edit\ProductCategoryEditView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\TabViews\Edit\ProductEditView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\TabViews\Edit\RatingEditView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\TabViews\Edit\ThreadEditView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\TabViews\ForumCategoryView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\TabViews\OrderDetailsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\TabViews\OrderView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\TabViews\Edit\PostEditView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\TabViews\PostView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\TabViews\ProductCategoryView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\TabViews\ProductView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\TabViews\RatingView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\TabViews\ThreadView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\WindowView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\Login\LoginView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Login\PasswordRecoveryView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Login\SignUpView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\TabViews\AccountView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\TabViews\Edit\AccountEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\TabViews\Edit\ForumCategoryEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\TabViews\Edit\OrderDetailsEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\TabViews\Edit\OrderEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\TabViews\Edit\ProductCategoryEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\TabViews\Edit\ProductEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\TabViews\Edit\RatingEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\TabViews\Edit\ThreadEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\TabViews\ForumCategoryView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\TabViews\OrderDetailsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\TabViews\OrderView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\TabViews\Edit\PostEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\TabViews\PostView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\TabViews\ProductCategoryView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\TabViews\ProductView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\TabViews\RatingView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\TabViews\ThreadView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\WindowView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
